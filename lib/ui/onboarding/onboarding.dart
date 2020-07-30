@@ -76,7 +76,7 @@ class OnBoarding extends  StatelessWidget{
               ],
             ),
           ),
-          Image.asset("assets/img/firstImage.png"),
+          Image.asset("assets/img/one.png"),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(
@@ -119,7 +119,7 @@ class OnBoarding extends  StatelessWidget{
               ],
             ),
           ),
-          Image.asset("assets/img/secondImage.png"),
+          Image.asset("assets/img/two.png"),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(
@@ -143,7 +143,7 @@ class OnBoarding extends  StatelessWidget{
       ),
     ),
     Container(
-      color: Colors.orange,
+      color: QuantumLeap.bg_main_lightest,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,7 +161,7 @@ class OnBoarding extends  StatelessWidget{
               ],
             ),
           ),
-          Image.asset("assets/img/firstImage.png"),
+          Image.asset("assets/img/three.png"),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(

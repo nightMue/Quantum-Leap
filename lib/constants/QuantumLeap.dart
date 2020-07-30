@@ -18,4 +18,5 @@ class QuantumLeap {
 
   static const Color bg_main = Color.fromRGBO(0, 5, 48, 1);
   static const Color bg_main_lighter = Color.fromRGBO(1, 8,  74, 1);
+  static const Color bg_main_lightest = Color.fromRGBO(0, 192,  255, 1);
 }

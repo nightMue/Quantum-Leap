@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         radius: 50.0,
                         child: Icon(
                           Icons.trending_up,
-                          color: Colors.blueAccent,
+                          color: QuantumLeap.bg_main_lightest,
                           size: 50.0,
                         ),
                       ),
