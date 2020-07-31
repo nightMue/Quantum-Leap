@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quantum_leap/constants/QuantumLeap.dart';
+import 'package:quantum_leap/core/TwoQubitBoard.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -7,9 +8,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
-  
+  TwoQubitBoard board;
+
   @override
   void initState() {
+    board = new TwoQubitBoard();
     super.initState();
   }
 
@@ -35,13 +38,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         color: QuantumLeap.bg_main_lighter,
         child: Center(
             child: Text(
-              "HOME SCREEN",
-              style: TextStyle(color: Colors.white),
+          "HOME SCREEN",
+          style: TextStyle(color: Colors.white),
         )),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.white,
-        onPressed: () => {},
+        onPressed: () => {board.printBoard()},
         child: Icon(Icons.undo, color: QuantumLeap.bg_main),
       ),
     );
